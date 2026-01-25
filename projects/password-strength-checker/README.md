@@ -1,12 +1,18 @@
 # Password Strength Checker
 
 ## Description
-A simple Python tool that evaluates password strength based on basic security rules.
+A Python-based utility designed to evaluate password strength using common security rules such as length, complexity, and character diversity. The project focuses on understanding common authentication weaknesses and secure input handling.
 
 ## Skills Demonstrated
-- Python scripting
-- Password security concepts
-- Input validation
+- Python scripting and control flow
+- Input validation techniques
+- Security policy awareness
+- Documentation and testing
+
+## Security Concepts Applied
+- Brute-force resistance
+- Credential hygiene
+- Basic authentication hardening
 
 ## Reflection
-This project focuses on understanding common password weaknesses.
+This project reinforces the importance of user education and technical controls in preventing weak credential-based attacks.
