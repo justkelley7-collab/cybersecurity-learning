@@ -1,0 +1,157 @@
+#Level 12 - 13
+
+bandit12@bandit:~$ ls
+data.txt
+bandit12@bandit:~$ ls -larth
+total 24K
+-rw-r--r--   1 root     root      807 Mar 31  2024 .profile
+-rw-r--r--   1 root     root      220 Mar 31  2024 .bash_logout
+-rw-r--r--   1 root     root     3.8K Oct 14 09:19 .bashrc
+drwxr-xr-x   2 root     root     4.0K Oct 14 09:26 .
+-rw-r-----   1 bandit13 bandit12 2.6K Oct 14 09:26 data.txt
+drwxr-xr-x 150 root     root     4.0K Oct 14 09:29 ..
+bandit12@bandit:~$ mkdir /tmp/secret
+mkdir: cannot create directory ‘/tmp/secret’: File exists
+bandit12@bandit:~$ mkdir /tmp/tidnab
+bandit12@bandit:~$ cp data.txt /tmp/tidnab
+bandit12@bandit:~$ cd /tmp/tidnab
+bandit12@bandit:/tmp/tidnab$ ls
+data.txt
+bandit12@bandit:/tmp/tidnab$ man xxd
+bandit12@bandit:/tmp/tidnab$ xxd -r data.txt > data1
+bandit12@bandit:/tmp/tidnab$ ls
+data1  data.txt
+bandit12@bandit:/tmp/tidnab$ file data1
+data1: gzip compressed data, was "data2.bin", last modified: Tue Oct 14 09:26:06 2025, max compression, from Unix, original size modulo 2^32 564
+bandit12@bandit:/tmp/tidnab$ mv data1 data2.gz
+bandit12@bandit:/tmp/tidnab$ ls
+data2.gz  data.txt
+bandit12@bandit:/tmp/tidnab$ gzip -d data2.gz
+bandit12@bandit:/tmp/tidnab$ ls
+data2  data.txt
+bandit12@bandit:/tmp/tidnab$ file data2
+data2: bzip2 compressed data, block size = 900k
+bandit12@bandit:/tmp/tidnab$ mv data2 data3.bz
+bandit12@bandit:/tmp/tidnab$ bzip2 -d data3.bz
+bandit12@bandit:/tmp/tidnab$ ls
+data3  data.txt
+bandit12@bandit:/tmp/tidnab$ file data3
+data3: gzip compressed data, was "data4.bin", last modified: Tue Oct 14 09:26:06 2025, max compression, from Unix, original size modulo 2^32 20480
+bandit12@bandit:/tmp/tidnab$ mv data3 data4.gz
+bandit12@bandit:/tmp/tidnab$ gzip -d data4.gz
+bandit12@bandit:/tmp/tidnab$ ls
+data4  data.txt
+bandit12@bandit:/tmp/tidnab$ file data4
+data4: POSIX tar archive (GNU)
+bandit12@bandit:/tmp/tidnab$ man tar
+bandit12@bandit:/tmp/tidnab$ mv data4 data5.tar
+bandit12@bandit:/tmp/tidnab$ tar -xf data5.tar
+bandit12@bandit:/tmp/tidnab$ ls
+data5.bin  data5.tar  data.txt
+bandit12@bandit:/tmp/tidnab$ file data5.bin
+data5.bin: POSIX tar archive (GNU)
+bandit12@bandit:/tmp/tidnab$ mv data5.bin data6.tar
+bandit12@bandit:/tmp/tidnab$ tar -xf data6.tar
+bandit12@bandit:/tmp/tidnab$ ls
+data5.tar  data6.bin  data6.tar  data.txt
+bandit12@bandit:/tmp/tidnab$ file data6.bin
+data6.bin: bzip2 compressed data, block size = 900k
+bandit12@bandit:/tmp/tidnab$ mv data6.bin data7.bz
+bandit12@bandit:/tmp/tidnab$ bzip2 -d data7.bz
+bandit12@bandit:/tmp/tidnab$ ls
+data5.tar  data6.tar  data7  data.txt
+bandit12@bandit:/tmp/tidnab$ file data7
+data7: POSIX tar archive (GNU)
+bandit12@bandit:/tmp/tidnab$ mv data7 data8.tar
+bandit12@bandit:/tmp/tidnab$ tar -xf data8.tar
+bandit12@bandit:/tmp/tidnab$ ls
+data5.tar  data6.tar  data8.bin  data8.tar  data.txt
+bandit12@bandit:/tmp/tidnab$ file data8.bin
+data8.bin: gzip compressed data, was "data9.bin", last modified: Tue Oct 14 09:26:06 2025, max compression, from Unix, original size modulo 2^32 49
+bandit12@bandit:/tmp/tidnab$ mv data8.bin data9.gz
+bandit12@bandit:/tmp/tidnab$ gzip -d data9.gz
+bandit12@bandit:/tmp/tidnab$ ls
+data5.tar  data6.tar  data8.tar  data9  data.txt
+bandit12@bandit:/tmp/tidnab$ file data9
+data9: ASCII text
+bandit12@bandit:/tmp/tidnab$ cat data9
+The password is FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
+bandit12@bandit:/tmp/tidnab$ 
+
+bandit12@bandit:~$ ls
+data.txt
+bandit12@bandit:~$ ls -larth
+total 24K
+-rw-r--r--   1 root     root      807 Mar 31  2024 .profile
+-rw-r--r--   1 root     root      220 Mar 31  2024 .bash_logout
+-rw-r--r--   1 root     root     3.8K Oct 14 09:19 .bashrc
+drwxr-xr-x   2 root     root     4.0K Oct 14 09:26 .
+-rw-r-----   1 bandit13 bandit12 2.6K Oct 14 09:26 data.txt
+drwxr-xr-x 150 root     root     4.0K Oct 14 09:29 ..
+bandit12@bandit:~$ mkdir /tmp/secret
+mkdir: cannot create directory ‘/tmp/secret’: File exists
+bandit12@bandit:~$ mkdir /tmp/tidnab
+bandit12@bandit:~$ cp data.txt /tmp/tidnab
+bandit12@bandit:~$ cd /tmp/tidnab
+bandit12@bandit:/tmp/tidnab$ ls
+data.txt
+bandit12@bandit:/tmp/tidnab$ man xxd
+bandit12@bandit:/tmp/tidnab$ xxd -r data.txt > data1
+bandit12@bandit:/tmp/tidnab$ ls
+data1  data.txt
+bandit12@bandit:/tmp/tidnab$ file data1
+data1: gzip compressed data, was "data2.bin", last modified: Tue Oct 14 09:26:06 2025, max compression, from Unix, original size modulo 2^32 564
+bandit12@bandit:/tmp/tidnab$ mv data1 data2.gz
+bandit12@bandit:/tmp/tidnab$ ls
+data2.gz  data.txt
+bandit12@bandit:/tmp/tidnab$ gzip -d data2.gz
+bandit12@bandit:/tmp/tidnab$ ls
+data2  data.txt
+bandit12@bandit:/tmp/tidnab$ file data2
+data2: bzip2 compressed data, block size = 900k
+bandit12@bandit:/tmp/tidnab$ mv data2 data3.bz
+bandit12@bandit:/tmp/tidnab$ bzip2 -d data3.bz
+bandit12@bandit:/tmp/tidnab$ ls
+data3  data.txt
+bandit12@bandit:/tmp/tidnab$ file data3
+data3: gzip compressed data, was "data4.bin", last modified: Tue Oct 14 09:26:06 2025, max compression, from Unix, original size modulo 2^32 20480
+bandit12@bandit:/tmp/tidnab$ mv data3 data4.gz
+bandit12@bandit:/tmp/tidnab$ gzip -d data4.gz
+bandit12@bandit:/tmp/tidnab$ ls
+data4  data.txt
+bandit12@bandit:/tmp/tidnab$ file data4
+data4: POSIX tar archive (GNU)
+bandit12@bandit:/tmp/tidnab$ man tar
+bandit12@bandit:/tmp/tidnab$ mv data4 data5.tar
+bandit12@bandit:/tmp/tidnab$ tar -xf data5.tar
+bandit12@bandit:/tmp/tidnab$ ls
+data5.bin  data5.tar  data.txt
+bandit12@bandit:/tmp/tidnab$ file data5.bin
+data5.bin: POSIX tar archive (GNU)
+bandit12@bandit:/tmp/tidnab$ mv data5.bin data6.tar
+bandit12@bandit:/tmp/tidnab$ tar -xf data6.tar
+bandit12@bandit:/tmp/tidnab$ ls
+data5.tar  data6.bin  data6.tar  data.txt
+bandit12@bandit:/tmp/tidnab$ file data6.bin
+data6.bin: bzip2 compressed data, block size = 900k
+bandit12@bandit:/tmp/tidnab$ mv data6.bin data7.bz
+bandit12@bandit:/tmp/tidnab$ bzip2 -d data7.bz
+bandit12@bandit:/tmp/tidnab$ ls
+data5.tar  data6.tar  data7  data.txt
+bandit12@bandit:/tmp/tidnab$ file data7
+data7: POSIX tar archive (GNU)
+bandit12@bandit:/tmp/tidnab$ mv data7 data8.tar
+bandit12@bandit:/tmp/tidnab$ tar -xf data8.tar
+bandit12@bandit:/tmp/tidnab$ ls
+data5.tar  data6.tar  data8.bin  data8.tar  data.txt
+bandit12@bandit:/tmp/tidnab$ file data8.bin
+data8.bin: gzip compressed data, was "data9.bin", last modified: Tue Oct 14 09:26:06 2025, max compression, from Unix, original size modulo 2^32 49
+bandit12@bandit:/tmp/tidnab$ mv data8.bin data9.gz
+bandit12@bandit:/tmp/tidnab$ gzip -d data9.gz
+bandit12@bandit:/tmp/tidnab$ ls
+data5.tar  data6.tar  data8.tar  data9  data.txt
+bandit12@bandit:/tmp/tidnab$ file data9
+data9: ASCII text
+bandit12@bandit:/tmp/tidnab$ cat data9
+The password is FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
+bandit12@bandit:/tmp/tidnab$ 
