@@ -1,5 +1,5 @@
 **#Level 12 - 13**
-
+```bash
 **bandit12@bandit:~$** ls
 data.txt
 **bandit12@bandit:~$** ls -larth
@@ -75,5 +75,5 @@ data9: ASCII text
 **bandit12@bandit:/tmp/tidnab$** cat data9
 The password is FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
 **bandit12@bandit:/tmp/tidnab$** 
-
+```
 
