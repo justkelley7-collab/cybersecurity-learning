@@ -1,5 +1,5 @@
 ##bandit 9 - 10
-
+```bash
 **cat data.txt**
 ��sg�ߺ�Z��s����#m��BM^R�{V��H#m��ѧ��of��6�u��{~[xJ��7k�Q�▒���[e��m���ϵ�q        _-*���.���vOs*{ifL�$�JE�S�CY  чPZr�m��l�@s������CB��W������B▒[�c�aDX_`���jU�/�J�R]e_�����3����żu�rT>��Ք���
                                                                                             �@fbΒ�ӈ�JLd�%%
@@ -15,3 +15,4 @@ eNL�*�L�"5+�<Ke���M��3���#�w$jEs�▒����G�
 ========== password
 f\Z'========== is
 ========== FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+```
