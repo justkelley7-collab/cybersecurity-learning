@@ -1,0 +1,20 @@
+level30->31
+
+bandit30@bandit:~$ mkdir /tmp/lev30
+bandit30@bandit:~$ cd  /tmp/lev30
+bandit30@bandit:/tmp/lev30$ git clone ssh://bandit30-git@localhost/home/bandit30-git/repo
+Cloning into 'repo'...
+bandit30-git@localhost password: 
+
+remote: Counting objects: 4, done.
+remote: Total 4 (delta 0), reused 0 (delta 0)
+Receiving objects: 100% (4/4), done.
+bandit30@bandit:/tmp/lev30$ cd repo/
+bandit30@bandit:/tmp/lev30/repo$ ls
+README.md
+bandit30@bandit:/tmp/lev30/repo$ cat README.md 
+just an epmty file... muahaha
+bandit30@bandit:/tmp/lev30/repo$ git tag
+secret
+bandit30@bandit:/tmp/lev30/repo$ git show secret
+
