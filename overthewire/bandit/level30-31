@@ -1,6 +1,6 @@
 #level30->31
 
-**bandit30@bandit:~$** mkdir /tmp/lev30
+bandit30@bandit:~$ mkdir /tmp/lev30
 bandit30@bandit:~$ cd  /tmp/lev30
 bandit30@bandit:/tmp/lev30$ git clone ssh://bandit30-git@localhost/home/bandit30-git/repo
 Cloning into 'repo'...
